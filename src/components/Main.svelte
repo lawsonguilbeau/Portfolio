@@ -23,12 +23,12 @@
 	let benefits = [
 		{
 			metric: "10x",
-			name: "a self taught developer",
+			name: "a full stack developer",
 			description:
-				"I taught myself to code using free online resources and absolutely fell in love with the creativity and problem solving that is involved in developing and engineering innovative new online experiences. Starting of with JavaScript, HTML & CSS and evolving my knowledge base to include JavaScript frameworks, backend programming, design, cloud services and much much more."
+				"Full Stack Developer specializing in React, Next.js, and Node.js. Experienced in building performant web applications, relational database schemas with PostgreSQL/Prisma, and scalable frontend interfaces."
 		},
 		{
-			name: "a product design & UX finatic",
+			name: "a product design & UX fanatic",
 			description:
 				"Carefully crafting and designing amazing art allows me to express and experiment with every morsel of creativity I have. I love the challenge of learning new design concepts and enabling myself with amazing art experiences."
 		},
@@ -49,8 +49,8 @@
 				<span class="poppins text-cyan-400">Developer</span>
 			</h2>
 			<p class="text-base sm:text-lg md:text-xl">
-				My <span class="text-cyan-400"> favorite tech</span> includes Svelte (SvelteKit), TailwindCSS,
-				Supabase & Drizzle!
+				<span class="text-cyan-400"> Specializing</span> in Next.js, React, Node.js, PostgreSQL, Prisma,
+				and Tailwind CSS!
 			</p>
 			<button
 				class="blueShadow mx-auto lg:mr-auto lg:ml-0 text-base sm:text-lg md:text-xl poppins relative overflow-hidden px-6 py-3 group rounded-full bg-white text-slate-950"
@@ -226,6 +226,6 @@
 		<div class="mx-auto -mt-12 italic sm:hidden opacity-50">
 			<p>Scroll to see more &rarr;</p>
 		</div>
-		<p class="mx-auto">So why not invest?</p>
+		<p class="mx-auto">Interested in collaborating?</p>
 	</section>
 </main>
