@@ -1,22 +1,26 @@
 <script>
 	import Step from "./Step.svelte";
+	import Experience from "./Experience.svelte"; // Correct alias import
 
 	let steps = [
 		{
 			name: "My GitHub",
 			icon: "fa-solid fa-diagram-project",
-			description: "My GitHub account"
+			description: "My GitHub account",
+			href: "https://github.com/lawsonguilbeau"
 		},
 		{
 			name: "Crypto Currency Tracker",
 			icon: "fa-brands fa-bitcoin",
-			description: "My custom crypto tracker"
+			description: "My custom crypto tracker",
+			href: "https://github.com/lawsonguilbeau/Crypto"
 		},
 		{
 			name: "Neovim Config",
 			icon: "fa-solid fa-file-code",
 			description:
-				"Augment your datasets with our filters and dataset manipulations to ensure your models are trained on the highest quality datasets (coming soon)."
+				"Augment your datasets with our filters and dataset manipulations to ensure your models are trained on the highest quality datasets (coming soon).",
+			href: "https://github.com/lawsonguilbeau/dotfiles"
 		}
 	];
 
@@ -64,7 +68,11 @@
 			</button>
 		</div>
 		<div class="relative shadow-2xl grid place-items-center">
-			<img src={"images/profile.png"} alt="Zetane Engine" class="object-cover z-[2] max-h-[70vh]" />
+			<img
+				src={"images/profile_2.png"}
+				alt="Zetane Engine"
+				class="object-cover z-[2] max-h-[70vh] rounded-full aspect-square border-4 border-slate-800 bg-black shadow-xl"
+			/>
 		</div>
 		<!-- <div  class="flex p-0.5 relative max-w-[700px] w-full mx-auto">
             <div
@@ -89,14 +97,6 @@
 				Curious to <span class="poppins text-cyan-400">see</span> my work?
 			</h3>
 		</div>
-		<a
-			href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-			target="_blank"
-			class="mx-auto px-4 py-2 rounded-md border border-solid border-white flex items-center gap-2 -mb-4 sm:-mb-0 -mt-10 hover:border-cyan-700 duration-200"
-		>
-			<i class="fa-regular fa-circle-play" />
-			<p>Watch the video</p>
-		</a>
 		<div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-10">
 			<Step step={steps[0]}>
 				<p>
@@ -169,60 +169,7 @@
 				</div>
 			{/each}
 		</div>
-		<h5 class={" text-2xl sm:text-3xl font-semibold text-center poppins "}>
-			The <span class="text-cyan-400">Complete</span> Package
-		</h5>
-		<div class="flex flex-col overflow-x-scroll gap-10 max-w-[800px] mx-auto w-full">
-			<table class="bg-white text-slate-700 rounded text-center">
-				<thead class={"border-b border-solid border-slate-200  "}>
-					<tr class="">
-						<th />
-						<th class="whitespace-nowrap p-2 px-4">Candidate #1</th>
-						<th class="whitespace-nowrap p-2 px-4">Candidate #2</th>
-						<th class="whitespace-nowrap p-2 px-4">Candidate #3</th>
-						<th class="bg-cyan-700 text-white whitespace-nowrap p-4 px-8">Me</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr class="border-b border-solid border-slate-200">
-						<td class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-sm"
-							>Dedication</td
-						>
-						<td><i class="fa-solid fa-xmark text-slate-500" /></td>
-						<td><i class="fa-solid fa-check text-slate-500" /></td>
-						<td><i class="fa-solid fa-xmark text-slate-500" /></td>
-						<td><i class="fa-solid fa-check text-green-500" /></td>
-					</tr>
-					<tr class="border-b border-solid border-slate-200">
-						<td class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-sm"
-							>Critical Thought</td
-						>
-						<td><i class="fa-solid fa-xmark text-slate-500" /></td>
-						<td><i class="fa-solid fa-check text-slate-500" /></td>
-						<td><i class="fa-solid fa-check text-slate-500" /></td>
-						<td><i class="fa-solid fa-check text-green-500" /></td>
-					</tr>
-					<tr>
-						<td class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-sm"
-							>Interpersonal Skills</td
-						>
-						<td><i class="fa-solid fa-check text-slate-500" /></td>
-						<td><i class="fa-solid fa-check text-slate-500" /></td>
-						<td><i class="fa-solid fa-xmark text-slate-500" /></td>
-						<td><i class="fa-solid fa-check text-green-500" /></td>
-					</tr>
-					<tr class="border-t border-solid border-slate-200">
-						<td class="border-r border-solid border-white pl-4 pr-8 py-4 font-semibold text-sm"
-							>Progamming Ability</td
-						>
-						<td><i class="fa-solid fa-check text-slate-500" /></td>
-						<td><i class="fa-solid fa-xmark text-slate-500" /></td>
-						<td><i class="fa-solid fa-check text-slate-500" /></td>
-						<td><i class="fa-solid fa-check text-green-500" /></td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
+		<Experience />
 		<div class="mx-auto -mt-12 italic sm:hidden opacity-50">
 			<p>Scroll to see more &rarr;</p>
 		</div>
