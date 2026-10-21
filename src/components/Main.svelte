@@ -100,7 +100,7 @@
 		<div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-10">
 			<Step step={steps[0]}>
 				<p>
-					Check out my <strong class="text-cyan-400">GitHub</strong> to see all of my projects.
+					Check out my <strong class="text-cyan-400">test</strong> to see all of my projects.
 				</p>
 			</Step>
 			<Step step={steps[1]}>
