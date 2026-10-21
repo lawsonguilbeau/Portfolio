@@ -71,7 +71,7 @@
 			<img
 				src={"images/profile_2.png"}
 				alt="Zetane Engine"
-				class="object-cover z-[2] max-h-[70vh] rounded-full aspect-square border-4 border-slate-800 bg-black shadow-xl"
+				class="object-cover z-[2] max-h-[320px] rounded-full aspect-square border-4 border-slate-800 bg-black shadow-xl"
 			/>
 		</div>
 		<!-- <div  class="flex p-0.5 relative max-w-[700px] w-full mx-auto">
